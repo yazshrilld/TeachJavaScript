@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+header.header {
+  /* margin: 10px 20px 20px 20em; This helps us to move things to the right */
+  font-size: xx-large;
+  font-weight: 900;
+  /* margin: 0 auto; */
+  text-align: center;
+}
