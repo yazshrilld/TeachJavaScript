@@ -10,8 +10,28 @@ const incl = check.every((inc) => inc.includes("2"))
 
 // let activities = []
 let activities = [
-    ['work', 9], ['Eat', 1],['Comute', 2],['Play Game', 1],['sleep', 7]
+    ['work', 9, 'good'], ['Eat', 1, 'shop'],['Comute', 2, 'mine'],['Play Game', 1,  3],['sleep', 7, 8]
 ]
-console.table(activities)
+// console.table(activities)
 
-console.log("myActivities: ", (activities[1]/24))
+console.log("myActivities: ", (activities[0][1]/24) * 100)
+// activities.forEach(act => console.log("myAct", act))
+// activities.forEach(act => console.log("myAct", act[2]))
+
+const myLoad = (yazid) => {
+return[
+    ['work', 9, 'good'], ['Eat', 1, 'shop'],['Comute', 2, 'mine']
+]
+}
+
+// console.log("MyLoad", myLoad())
+
+const yazYaz = {
+    validate: [{
+        school: "ECLC",
+        class: "Primary 4",
+        status: "Passed",
+    }]
+}
+console.log("myYazYaz: ", yazYaz.validate)
+console.log("myYazYaz: ", yazYaz.validate[0].status)
