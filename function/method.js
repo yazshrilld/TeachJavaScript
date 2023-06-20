@@ -46,4 +46,5 @@ console.log("myAyazida", Ayazida)
 Ayazida.splice(0, 2) //Fri, sun, sun
 console.log("TheOnlyAyazida: ", Ayazida)
 Ayazida.splice(0, 2)//sun
-console.log("TheOneAyazidas: ", Ayazida)
+console.log("TheOneAyazidaaas: ", Ayazida)
+
