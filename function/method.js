@@ -14,7 +14,7 @@ let activities = [
 ]
 // console.table(activities)
 
-console.log("myActivities: ", (activities[0][1]/24) * 100)
+// console.log("myActivities: ", (activities[0][1]/24) * 100)
 // activities.forEach(act => console.log("myAct", act))
 // activities.forEach(act => console.log("myAct", act[2]))
 
@@ -33,5 +33,17 @@ const yazYaz = {
         status: "Passed",
     }]
 }
-console.log("myYazYaz: ", yazYaz.validate)
-console.log("myYazYaz: ", yazYaz.validate[0].status)
+// console.log("myYazYaz: ", yazYaz.validate)
+// console.log("myYazYaz: ", yazYaz.validate[0].status)
+
+// Using The Splice Method
+
+const Ayazida = ['Mon','Wed','Fri','Sun',]
+Ayazida.splice(-3, 0,)
+console.log("Ayazida: ", Ayazida)
+Ayazida.splice(7, 0, "Sun")
+console.log("myAyazida", Ayazida)
+Ayazida.splice(0, 2) //Fri, sun, sun
+console.log("TheOnlyAyazida: ", Ayazida)
+Ayazida.splice(0, 2)//sun
+console.log("TheOnlyAyazidas: ", Ayazida)
