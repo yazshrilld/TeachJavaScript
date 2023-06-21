@@ -1,4 +1,4 @@
-let yazid = ['12','2','92','172','52','3000000000000000000000000000000000000000000000000002']
+let yazid = ['12','2','92','172','52','300000000000000000000000000002']
 // console.table("yazid: ", yazid)
 // console.log("yazid: ", yazid)
 const check = yazid.map((yaz) => yaz)
