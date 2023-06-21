@@ -18,7 +18,7 @@ let activities = [
 // activities.forEach(act => console.log("myAct", act))
 // activities.forEach(act => console.log("myAct", act[2]))
 
-const myLoad = (yazid) => {
+const myLoad = (yaz) => {
 return[
     ['work', 9, 'good'], ['Eat', 1, 'shop'],['Comute', 2, 'mine']
 ]
