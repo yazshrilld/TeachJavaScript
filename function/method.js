@@ -10,7 +10,7 @@ const incl = check.every((include) => include.includes("2"))
 
 // let activities = []
 let activities = [
-    ['work', 9, 'good'], ['Eat', 1, 'shop'],['Comute', 2, 'mine'],['Play Game', 1,  3],['sleep', 7, 8]
+    ['work', 9, 'school'], ['Eat', 1, 'food'],['Comute', 2, 'transportation'],['Play Game', 1,  35],['sleep', 7, 4]
 ]
 // console.table(activities)
 
