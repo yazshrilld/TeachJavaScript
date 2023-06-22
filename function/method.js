@@ -1,10 +1,10 @@
 let yazid = ['12','2','92','172','52','300000000000000000000000000002']
 // console.table("yazid: ", yazid)
-// console.log("yazid: ", yazid)
+// console.log("yazida: ", yazid)
 const check = yazid.map((yaz) => yaz)
 // console.log("yaz: ", check)
 const incl = check.every((inc) => inc.includes("2"))
-// console.log("yazincl: ", incl)
+// console.log("yazincludes: ", incl)
 
 //Learning MultiDimensionalArrays
 
