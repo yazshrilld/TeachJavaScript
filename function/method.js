@@ -3,7 +3,7 @@ let yazid = ['12','2','92','172','52','300000000000000000000000000002']
 // console.log("yazida: ", yazid)
 const check = yazid.map((yaz) => yaz)
 // console.log("yaz: ", check)
-const incl = check.every((inc) => inc.includes("2"))
+const incl = check.every((include) => include.includes("2"))
 // console.log("yazincludes: ", incl)
 
 //Learning MultiDimensionalArrays
