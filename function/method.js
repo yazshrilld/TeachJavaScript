@@ -28,9 +28,9 @@ return[
 
 const yazYaz = {
     validate: [{
-        school: "ECLC",
-        class: "Primary 4",
-        status: "Passed",
+        school: "KodingSchool",
+        class: "JavaScript",
+        status: "Junior Developer",
     }]
 }
 // console.log("myYazYaz: ", yazYaz.validate)
