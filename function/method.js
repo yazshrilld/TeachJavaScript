@@ -20,7 +20,7 @@ let activities = [
 
 const myLoad = (drYaz) => {
 return[
-    ['work', 9, 'good'], ['Eat', 1, 'shop'],['Comute', 2, 'mine']
+    ['work', 9, 'programming'], ['Eat', 1, 'food'],['Comute', 2, 'transportation']
 ]
 }
 
