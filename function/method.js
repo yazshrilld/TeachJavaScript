@@ -30,7 +30,7 @@ const yazYaz = {
     validate: [{
         school: "KodingSchool",
         class: "JavaScript",
-        status: "Junior Developer",
+        status: "Junior Developer/ Intermediate Developer",
     }]
 }
 // console.log("myYazYaz: ", yazYaz.validate)
