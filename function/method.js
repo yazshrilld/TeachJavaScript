@@ -40,11 +40,14 @@ const yazYaz = {
 
 const Ayazida = ['Mon','Wed','Fri','Sun',]
 Ayazida.splice(-3, 0,)
-console.log("Ayazida: ", Ayazida)
+// console.log("Ayazida: ", Ayazida)
 Ayazida.splice(7, 0, "Sun")
-console.log("myAyazida", Ayazida)
+// console.log("myAyazida", Ayazida)
 Ayazida.splice(0, 2) //Fri, sun, sun
-console.log("TheOnlyAyazida: ", Ayazida)
+// console.log("TheOnlyAyazida: ", Ayazida)
 Ayazida.splice(0, 2)//sun
-console.log("TheOneAyazidaaas: ", Ayazida)
+// console.log("TheOneAyazidaaas: ", Ayazida)
+
+let myYazid = '/dashboard'
+// console.log(myYazid.slice(1))
 
