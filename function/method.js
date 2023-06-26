@@ -52,5 +52,5 @@ let myYazid = '/dashboard'
 // console.log(myYazid.slice(1))
 let score = 5 * 4 
 
-console.log(score + 5)
+// console.log(score + 5)
 
