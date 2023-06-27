@@ -51,6 +51,7 @@ Ayazida.splice(0, 5)//sun
 let myYazid = '/dashboard'
 // console.log(myYazid.slice(1))
 let score = 5 * 43
+//work on the console
 
 // console.log(score + 5)
 
