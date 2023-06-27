@@ -45,7 +45,7 @@ Ayazida.splice(7, 0, "Sun")
 // console.log("myAyazida", Ayazida)
 Ayazida.splice(0, 2) //Fri, sun, sun
 // console.log("TheOnlyAyazida: ", Ayazida)
-Ayazida.splice(0, 2)//sun
+Ayazida.splice(0, 5)//sun
 // console.log("TheOneAyazidaaas: ", Ayazida)
 
 let myYazid = '/dashboard'
