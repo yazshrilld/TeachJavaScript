@@ -41,7 +41,7 @@ const yazYaz = {
 const Ayazida = ['Mon','Wed','Fri','Sun',]
 Ayazida.splice(-3, 0,)
 // console.log("Ayazida: ", Ayazida)
-Ayazida.splice(6, 0, "Sun")
+Ayazida.splice(6, 0, "Sunday")
 // console.log("myAyazida", Ayazida)
 Ayazida.splice(0, 2) //Fri, sun, sun
 // console.log("TheOnlyAyazida: ", Ayazida)
