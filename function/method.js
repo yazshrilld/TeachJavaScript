@@ -48,7 +48,7 @@ Ayazida.splice(0, 2) //Fri, sun, sun
 Ayazida.splice(0, 5)//sun
 // console.log("TheOneAyazidaaas: ", Ayazida)
 
-let myYazid = '/dashboard'
+let myYazid = '/dashboards'
 // console.log(myYazid.slice(1))
 let score = 5 * 43
 //work on the console
