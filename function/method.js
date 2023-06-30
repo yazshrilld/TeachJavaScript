@@ -93,5 +93,5 @@ let sliced = rows.slice(0, 5)
 console.log("Sliced: ",sliced)
 
 sliced.map((row) => {
-    console.log("MyRow: ", row[0].cName)
+    console.log("MyRow: ", row[0].cNum)
 })
