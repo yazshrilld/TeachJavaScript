@@ -90,7 +90,7 @@ const rows = [...Array(20).keys()].map(() =>
 );
 
 let sliced = rows.slice(0, 5)
-console.log("Sliced: ",sliced)
+console.log("sliced: ",sliced)
 
 sliced.map((row) => {
     console.log("MyRow: ", row[0].cNum)
