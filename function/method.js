@@ -79,7 +79,7 @@ console.log(
 
 const rows = [...Array(20).keys()].map(() =>
   createData(
-    "Ajala Michael",
+    "Yazid Musa",
     "Ikorodu, Lagos",
     "Ikorodu, Lagos",
     "03-02-2021, 5:00PM",
