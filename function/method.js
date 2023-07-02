@@ -80,8 +80,8 @@ console.log(
 const rows = [...Array(20).keys()].map(() =>
   createData(
     "Yazid Musa",
-    "Ikorodu, Lagos",
-    "Ikorodu, Lagos",
+    "Lagos",
+    "Ogba",
     "03-02-2021, 5:00PM",
     "₦20000",
     "completed",
