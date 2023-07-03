@@ -77,7 +77,7 @@ console.log(
 );
 // console.log(createData.status);
 
-const rows = [...Array(20).keys()].map(() =>
+const rows = [...Array(20).keys()].map((row) =>
   createData(
     "Yazid Musa",
     "Lagos",
