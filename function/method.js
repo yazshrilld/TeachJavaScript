@@ -89,9 +89,10 @@ const rows = [...Array(20).keys()].map(() =>
   )
 );
 
-let sliced = rows.slice(0, 5)
-console.log("sliced: ",sliced)
+let sliced = rows.slice(1, 4);
+// let sliced = rows.slice(0, 5) //checking to know if the data will return same result
+console.log("sliced: ", sliced);
 
 sliced.map((row) => {
-    console.log("MyRow: ", row[0].cNum)
-})
+  console.log("MyRow: ", row[0].cNum);
+});
