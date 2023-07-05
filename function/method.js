@@ -81,7 +81,7 @@ const rows = [...Array(30).keys()].map((row) =>
   createData(
     "Yazid Musa Itopa",
     "Lagos",
-    "Ogba",
+    "Victoria Island",
     "03-02-2021, 5:00PM",
     "₦20000",
     "completed",
