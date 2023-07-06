@@ -89,10 +89,41 @@ const rows = [...Array(30).keys()].map((row) =>
   )
 );
 
-let sliced = rows.slice(1, 4) && console.log("Yazid");
+let sliced = rows.slice(1, 4) && console.log("Yazid oooooooo");
 // let sliced = rows.slice(0, 5) //checking to know if the data will return same result
 // console.log("sliced: ", sliced);
 
-sliced.map((row) => {
-  console.log("MyRow: ", row[0].cNum);
-});
+// sliced.map((row) => {
+//   console.log("MyRow: ", row[0].cNum);
+// });
+
+const myView = {
+  DL: {
+    names: "Ayazida",
+    url: "/Ayazida"
+  },
+  IP: {
+    names: "Yazid",
+    url: "/Yazid"
+  },
+  NIN: {
+    names: "Ajibola",
+    url: "/Ajibola"
+  },
+  VC: {
+    names: "Ajikunmen",
+    url: "/Ajikunmen"
+  },
+}
+
+console.log("I am testing for myView Identity:", myView.DL.names) 
+
+if (myView.NIN.names ==="Ajibola") {
+  
+    console.log("The logic will work")
+} else {
+  console.log("too many names")
+}
+
+ myView.NIN['names'] = "Torishe"
+ console.log("new: ", myView)
