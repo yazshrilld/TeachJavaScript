@@ -125,5 +125,5 @@ if (myView.NIN.names ==="Ajibola") {
   console.log("too many names")
 }
 
- myView.NIN['names'] = "Torishe"
+ myView.NIN['names'] = "Bus Collections"
  console.log("new: ", myView)
