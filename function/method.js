@@ -73,7 +73,7 @@ function createData(cNum, cType, cReason, status, date, action) {
 }
 console.log(
   "MyData: ",
-  createData("A-Eye", "A-Eye", "A-Eye", "A-Eye", "A-Eye", "A-Eye", "A-Eye")
+  createData("A-Eyes", "A-Eyes", "A-Eyes", "A-Eyes", "A-Eyes", "A-Eyes", "A-Eyes")
 );
 // console.log(createData.status);
 
