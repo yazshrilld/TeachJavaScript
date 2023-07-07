@@ -68,8 +68,8 @@ console.log("capital-letter: ", YazidCaps);
 
 // console.log(score + 5)
 
-function createData(cNum, cType, cReason, status, date, action) {
-  return { cNum, cType, cReason, status, date, action };
+function createData(cNum, cSquare, cReason, status, date, action) {
+  return { cNum, cSquare, cReason, status, date, action };
 }
 console.log(
   "MyData: ",
