@@ -77,7 +77,7 @@ console.log(
 );
 // console.log(createData.status);
 
-const rows = [...Array(30).keys()].map((row) =>
+const rows = [...Array(40).keys()].map((row) =>
   createData(
     "Yazid Musa Itopa",
     "Lagos",
