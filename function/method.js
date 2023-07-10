@@ -83,7 +83,7 @@ const rows = [...Array(40).keys()].map((row) =>
     "Lagos",
     "Victoria Island",
     "03-02-2021",
-    "₦20000",
+    "₦200000",
     "completed",
     "View more"
   )
