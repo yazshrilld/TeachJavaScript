@@ -62,19 +62,19 @@ let score = 5 * 43;
 //work on the console
 
 let YazidSmallLetter = "Yazid";
-console.log("Small-letter: ", YazidSmallLetter);
+// console.log("Small-letter: ", YazidSmallLetter);
 let YazidCaps = YazidSmallLetter[0].toUpperCase();
-console.log("capital-letter: ", YazidCaps);
+// console.log("capital-letter: ", YazidCaps);
 
 // console.log(score + 5)
 
 function createData(cNum, cType, cReason, status, date, action) {
   return { cNum, cType, cReason, status, date, action };
 }
-console.log(
-  "MyData: ",
-  createData("A-Eyes", "A-Eyes", "A-Eyes", "A-Eyes", "A-Eyes", "A-Eyes", "A-Eyes")
-);
+// console.log(
+//   "MyData: ",
+//   createData("A-Eyes", "A-Eyes", "A-Eyes", "A-Eyes", "A-Eyes", "A-Eyes", "A-Eyes")
+// );
 // console.log(createData.status);
 
 const rows = [...Array(40).keys()].map((row) =>
@@ -89,7 +89,7 @@ const rows = [...Array(40).keys()].map((row) =>
   )
 );
 
-let sliced = rows.slice(1, 4) && console.log("Yazid oooooooo");
+// let sliced = rows.slice(1, 4) && console.log("Yazid oooooooo");
 // let sliced = rows.slice(0, 5) //checking to know if the data will return same result
 // console.log("sliced: ", sliced);
 
@@ -116,14 +116,45 @@ const myView = {
   },
 }
 
-console.log("I am testing for myView Identity:", myView.DL.names) 
+// console.log("I am testing for myView Identity:", myView.DL.names) 
 
 if (myView.NIN.names ==="Ajibola") {
   
-    console.log("The logic will work")
+    // console.log("The logic will work")
 } else {
-  console.log("too many names")
+  // console.log("too many names")
 }
 
  myView.NIN['names'] = "Bus Collections"
- console.log("new: ", myView)
+//  console.log("new: ", myView)
+
+ const addValidatedAccount = () => {
+  setUser((prevS) => ({
+    ...prevS,
+    validatedUsers: [
+      ...prevS.validatedUsers,
+      { ...jo[0], identity: formData.selected },
+    ],
+  }));
+
+  const clonedJo = [...jo];
+  clonedJo.splice(0, 1);
+  setJo(clonedJo);
+};
+
+const myPassword = "YazidMusa"
+
+// let b = new Buffer.from(*password);
+
+// var base64data = b.toString("base64")
+
+let string = 'abctopitify';
+
+// Encode the String
+let encodedString = btoa(string);// Outputs: "SGVsbG8gV29ybGQh"
+
+if( encodedString === "YWJjdG9waXRpZnk=" ) {
+  console.log("Yes they are equal")
+} else {
+  console.log("No, not equal")
+}
