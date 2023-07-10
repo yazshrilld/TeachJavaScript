@@ -100,35 +100,41 @@ const rows = [...Array(40).keys()].map((row) =>
 const myView = {
   DL: {
     names: "Ayazida",
-    url: "/Ayazida"
+    url: "/Ayazida",
   },
   IP: {
     names: "Yazid",
-    url: "/Yazid"
+    url: "/Yazid",
   },
   NIN: {
     names: "Ajibola",
-    url: "/Ajibola"
+    url: "/Ajibola",
   },
   VC: {
     names: "Ajikunmehn",
-    url: "/Ajikunmen"
+    url: "/Ajikunmen",
   },
-}
+};
 
-// console.log("I am testing for myView Identity:", myView.DL.names) 
+// console.log("I am testing for myView Identity:", myView.DL.names)
 
-if (myView.NIN.names ==="Ajibola") {
-  
-    // console.log("The logic will work")
+// if (myView.NIN.names === "Ajibola") {
+//   console.log("The logic will work");
+// } else {
+//   console.log("too many names");
+// }
+
+console.log("///.........NEXT LINE TEST.........//")
+if (myView.NIN.names === "Ajibola" && myView.VC.names === "Ajoikunmehn") {
+  console.log("My name is yazid")
 } else {
-  // console.log("too many names")
+  console.log("Mixing up somewhere")
 }
 
- myView.NIN['names'] = "Bus Collections"
+myView.NIN["names"] = "Bus Collections";
 //  console.log("new: ", myView)
 
- const addValidatedAccount = () => {
+const addValidatedAccount = () => {
   setUser((prevS) => ({
     ...prevS,
     validatedUsers: [
@@ -142,19 +148,24 @@ if (myView.NIN.names ==="Ajibola") {
   setJo(clonedJo);
 };
 
-const myPassword = "YazidMusa"
+const myPassword = "YazidMusa";
 
 // let b = new Buffer.from(*password);
 
 // var base64data = b.toString("base64")
 
-let string = 'abctopitify';
+let string = "abctopitify";
 
 // Encode the String
-let encodedString = btoa(string);// Outputs: "SGVsbG8gV29ybGQh"
+let encodedString = btoa(string); // Outputs: "SGVsbG8gV29ybGQh"
 
-if( encodedString === "YWJjdG9waXRpZnk=" ) {
-  console.log("Yes they are equal")
+if (encodedString === "YWJjdG9waXRpZnk=") {
+  // console.log("Yes they are equal")
 } else {
-  console.log("No, not equal")
+  // console.log("No, not equal")
 }
+
+const namess = "yazid";
+const name2 = "itopa";
+
+
