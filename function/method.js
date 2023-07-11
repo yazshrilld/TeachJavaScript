@@ -111,7 +111,7 @@ const myView = {
     url: "/Ajibola",
   },
   VC: {
-    names: "Ajikunmehn",
+    names: "Ajikunmen",
     url: "/Ajikunmen",
   },
 };
