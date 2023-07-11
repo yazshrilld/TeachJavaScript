@@ -107,8 +107,8 @@ const myView = {
     url: "/Yazid",
   },
   NIN: {
-    names: "Ajibola",
-    url: "/Ajibola",
+    names: "Bola",
+    url: "/Bola",
   },
   VC: {
     names: "Ajikunmen",
