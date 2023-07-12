@@ -99,8 +99,8 @@ const rows = [...Array(40).keys()].map((row) =>
 
 const myView = {
   DL: {
-    names: "Ayazida",
-    url: "/Ayazida",
+    names: "Yazid",
+    url: "/Yazid",
   },
   IP: {
     names: "Yazid",
