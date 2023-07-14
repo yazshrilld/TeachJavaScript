@@ -103,7 +103,7 @@ const myView = {
     url: "/Yazid",
   },
   IP: {
-    names: "Yazida",
+    names: "AYazida",
     url: "/Yazida",
   },
   NIN: {
