@@ -124,11 +124,11 @@ const myView = {
 //   console.log("too many names");
 // }
 
-console.log("///.........NEXT LINE TEST.........//")
+// console.log("///.........NEXT LINE TEST.........//")
 if (myView.NIN.names === "Ajibola" && myView.VC.names === "Ajoikunmehn") {
-  console.log("My name is yazid")
+  // console.log("My name is yazid")
 } else {
-  console.log("Mixing up somewhere")
+  // console.log("Mixing up somewhere")
 }
 
 myView.NIN["names"] = "Bus Collections";
@@ -169,3 +169,21 @@ const namess = "yazid";
 const name2 = "itopa";
 
 
+const role = ['Team Lead, Legal Services', 'Legal Officer', 'Customer Service Officer']
+console.log("roles", role)
+
+role.map((rl) => {
+  console.log("MappedRoles: ", rl)
+  if(rl.includes('Team')) {
+    console.log("Highest Admin")
+  } else if(rl.includes('Customer')) {
+    console.log("Lowest User")
+  } else {
+    console.log("Admin")
+  }
+})
+
+const testName = "Yazid"
+testName.split("").map((tst) => {
+  console.log("fromTestName: ", tst)
+})
