@@ -168,22 +168,54 @@ if (encodedString === "YWJjdG9waXRpZnk=") {
 const namess = "yazid";
 const name2 = "itopa";
 
+// const role = [
+//   "Team Lead, Legal Services",
+//   "Legal Officer",
+//   "Customer Service Officer",
+//   "Application Developer",
+// ];
 
-const role = ['Team Lead, Legal Services', 'Legal Officer', 'Customer Service Officer']
-console.log("roles", role)
+// console.log("roles", role);
+// role.map((rl) => {
+//   console.log("MappedRoles: ", rl);
+//   if (rl.includes("Team")) {
+//     console.log("Highest Admin");
+//   } else if (rl.includes("Customer")) {
+//     console.log("Lowest User");
+//   } else {
+//     console.log("Admin");
+//   }
+// });
 
-role.map((rl) => {
-  console.log("MappedRoles: ", rl)
-  if(rl.includes('Team')) {
-    console.log("Highest Admin")
-  } else if(rl.includes('Customer')) {
-    console.log("Lowest User")
-  } else {
-    console.log("Admin")
-  }
-})
-
-const testName = "Yazid"
+const testName = "Yazid";
 testName.split("").map((tst) => {
-  console.log("fromTestName: ", tst)
-})
+  // console.log("fromTestName: ", tst);
+});
+
+const roles = [
+  "Team Lead, Legal Services",
+  "Legal Officer",
+  "Customer Service Officer",
+  "Application Developer",
+];
+
+const ROLES_MAP = {
+  "Solicitor": 1,
+  "Customer Service Officer": 2,
+  "Legal Officer": 3,
+  "Team Lead, Legal Services": 4,
+  "Application Developer": 4,
+};
+
+// console.log("SelectedRoles: ", ROLES_MAP['Team Lead, Legal Services'] = 400)
+
+const student = {
+  classTeacher: "Abdul Salam Jakande",
+  classMemberNumber: 40
+}
+
+// alert(JSON.stringify(student))
+
+const books = JSON.parse(student)
+console.log(books)
+
