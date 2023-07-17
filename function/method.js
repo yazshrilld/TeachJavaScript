@@ -216,6 +216,17 @@ const student = {
 
 // alert(JSON.stringify(student))
 
-const books = JSON.parse(student)
-console.log(books)
+// const books = JSON.parse(student)
+// console.log(books)
 
+const yazTest = 5;
+// console.log("MyYazTest", yazTest)
+
+if( yazTest === 5 ) {
+  // console.log("They are equal")
+} else {
+  // console.log("They are not equal")
+}
+
+const permissions = localStorage.getItem("permission")
+console.log("MyPermission", permissions)
