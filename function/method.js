@@ -228,5 +228,5 @@ if( yazTest === 5 ) {
   // console.log("They are not equal")
 }
 
-const permissions = localStorage.getItem("permission")
+const permissions = localStorage.getItem("permissions")
 console.log("MyPermission", permissions)
