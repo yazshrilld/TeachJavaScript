@@ -211,7 +211,7 @@ const ROLES_MAP = {
 
 const student = {
   classTeacher: "Abdul Salam Jakande",
-  classMemberNumber: 40
+  classMemberNumber: 70
 }
 
 // alert(JSON.stringify(student))
