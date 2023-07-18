@@ -214,6 +214,8 @@ const student = {
   classMemberNumber: 100
 }
 
+console.log("MyStudent: ", student['classTeacher'])
+
 // alert(JSON.stringify(student))
 
 // const books = JSON.parse(student)
@@ -229,4 +231,4 @@ if( yazTest === 6 ) {
 }
 
 const permissions = localStorage.getItem("permissions")
-console.log("MyPermission", permissions)
+// console.log("MyPermission", permissions)
