@@ -222,7 +222,7 @@ const student = {
 const yazTest = 5;
 // console.log("MyYazTest", yazTest)
 
-if( yazTest === 5 ) {
+if( yazTest === 6 ) {
   // console.log("They are equal")
 } else {
   // console.log("They are not equal")
