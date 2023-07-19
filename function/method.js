@@ -214,7 +214,8 @@ const student = {
   classMemberNumber: 100
 }
 
-console.log("MyStudent: ", student['classTeacher'])
+console.log("MyStudents: ", student['classTeacher'])
+console.log("MyStudents: ", student['classTeachers'])
 
 // alert(JSON.stringify(student))
 
