@@ -215,7 +215,7 @@ const student = {
 }
 
 console.log("MyStudents: ", student['classTeacher'])
-console.log("MyStudents: ", student['classTeachers'])
+console.log("MyStudents: ", student['classTeachers']) //this method will fail
 
 // alert(JSON.stringify(student))
 
