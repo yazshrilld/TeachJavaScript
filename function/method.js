@@ -214,7 +214,7 @@ const student = {
   classMemberNumber: 100
 }
 
-console.log("MyStudents: ", student['classTeacher'])
+console.log("MyStudents: ", student['classTeacher']) //this method will be succesful
 console.log("MyStudents: ", student['classTeachers']) //this method will fail
 
 // alert(JSON.stringify(student))
