@@ -214,8 +214,8 @@ const student = {
   classMemberNumber: 100
 }
 
-console.log("MyStudent: ", student['classTeacher']) //this method will be succesful
-console.log("MyStudent: ", student['classTeachers']) //this method will fail
+// console.log("MyStudent: ", student['classTeacher']) //this method will be succesful
+// console.log("MyStudent: ", student['classTeachers']) //this method will fail
 
 // alert(JSON.stringify(student))
 
@@ -232,4 +232,20 @@ if( yazTest === 6 ) {
 }
 
 const permissions = localStorage.getItem("permissions")
+
+
 // console.log("MyPermission", permissions)
+
+const NewYaz = [0]
+const ans = NewYaz[NewYaz.length - 1]
+// console.log("ans: ", ans)
+// console.log("Length: ", NewYaz.length)
+
+ const checks = NewYaz.every((it) => {
+  it !== ""
+ })
+//  console.log("checks: ", checks)
+
+ const ya = ['a','b','c','d','e',]
+ const token = ya.join("-")
+ console.log("Token: ", token)
