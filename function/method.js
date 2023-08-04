@@ -200,7 +200,7 @@ const roles = [
 ];
 
 const ROLES_MAP = {
-  "Solicitor": 1,
+  Solicitor: 1,
   "Customer Service Officer": 2,
   "Legal Officer": 3,
   "Team Lead, Legal Services": 4,
@@ -211,8 +211,8 @@ const ROLES_MAP = {
 
 const student = {
   classTeacher: "Abdul Salam Jakande",
-  classMemberNumber: 100
-}
+  classMemberNumber: 100,
+};
 
 // console.log("MyStudent: ", student['classTeacher']) //this method will be succesful
 // console.log("MyStudent: ", student['classTeachers']) //this method will fail
@@ -225,27 +225,31 @@ const student = {
 const yazTest = 5;
 // console.log("MyYazTest", yazTest)
 
-if( yazTest === 6 ) {
+if (yazTest === 6) {
   // console.log("They are equal")
 } else {
   // console.log("They are not equal")
 }
 
-const permissions = localStorage.getItem("permissions")
-
+const permissions = localStorage.getItem("permissions");
 
 // console.log("MyPermission", permissions)
 
-const NewYaz = [0]
-const ans = NewYaz[NewYaz.length - 1]
+const NewYaz = [0];
+const ans = NewYaz[NewYaz.length - 1];
 // console.log("ans: ", ans)
 // console.log("Length: ", NewYaz.length)
 
- const checks = NewYaz.every((it) => {
-  it !== ""
- })
+const checks = NewYaz.every((it) => {
+  it !== "";
+});
 //  console.log("checks: ", checks)
 
- const ya = ['a','b','c','d','e',]
- const token = ya.join("-")
- console.log("Token: ", token)
+const ya = ["a", "b", "c", "d", "e"];
+const token = ya.join("-");
+console.log("Token: ", token);
+
+const handleSubmit = (values, { setSubmitting }) => {
+  alert(JSON.stringify(values, null, 2));
+  setSubmitting(false); //this resets the form
+};
