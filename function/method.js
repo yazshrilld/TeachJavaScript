@@ -247,9 +247,54 @@ const checks = NewYaz.every((it) => {
 
 const ya = ["a", "b", "c", "d", "e"];
 const token = ya.join("-");
-console.log("Token: ", token);
+// console.log("Token: ", token);
 
 const handleSubmit = (values, { setSubmitting }) => {
   alert(JSON.stringify(values, null, 2));
   setSubmitting(false); //this resets the form
 };
+
+const myYazDentity =  {
+  DL: {
+    name: "DL",
+    payloadName: "driversLicence",
+    value: "Driver's License",
+    label: "Driver's License ",
+    uploadLabel: "Driver's License",
+    url: "/verifyDriverlicense",
+    payloadKey: "DriverLicense_number",
+  },
+  IP: {
+    name: "IP",
+    value: "International Passport",
+    label: "International Passport",
+    uploadLabel: "International Passport",
+    url: "/verifyPassport",
+    payloadKey: "passport_number",
+  },
+  NIN: {
+    name: "NIN",
+    value: "National Identification Number",
+    label: "National Identification Number",
+    uploadLabel: "National Identification Number",
+    url: "/verifyNIN",
+    payloadKey: "NIN_number",
+  },
+  VC: {
+    name: "VC",
+    value: "Voters Card",
+    label: "Voters Card",
+    uploadLabel: "Voters Card",
+    url: "/verifyPVC",
+    payloadKey: "PVC_number",
+  },
+};
+
+const log_1 = Object.keys(myYazDentity)
+const log_2 = Object.values(myYazDentity)
+// console.log("Log_1: ", log_1)
+// console.log("Log_2: ", log_2)
+// console.log("Log_2: ", log_2[2].name)
+log_2.map((itm) => {
+  // console.log(itm)
+} )
