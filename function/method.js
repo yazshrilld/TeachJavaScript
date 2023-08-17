@@ -298,3 +298,16 @@ const log_2 = Object.values(myYazDentity)
 log_2.map((itm) => {
   // console.log(itm)
 } )
+
+// {
+//   data.filter((item) => {
+//     return search.toLowerCase() === "" ? item : item.companyName.toLowerCase().includes(search)
+//   })
+// }
+
+let YazCorpSearch = "Done"
+// console.log("YazCorpSearch: ", YazCorpSearch.length)
+
+const YAZ = `otp/send/otpUrl=https://www.providusbank.com?musa.yazid49@gmail.com`
+const YAZI = `otp/send/musa.yazid49@gmail.com?otpUrl=https://www.providusbank.com`
+console.log("Check: ", YAZ === YAZI)
