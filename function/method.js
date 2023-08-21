@@ -334,4 +334,10 @@ const found = array2.some((element) => element > 10);
 // If you need to find if a value exists in an array, use includes(). Again, it checks each element for equality with the value instead of using a testing function.
 // If you need to find if any element satisfies the provided testing function, use some().
 
-console.log("result: ", 0 > 0);
+// console.log("result: ", 0 > 0);
+
+const STAFF_ROLE = ["Application Developer", "Customer Service Officer", "Legal Officer", "Team Lead, Legal Services"]
+const role = "Internal Control"
+console.log("Check: ", STAFF_ROLE.includes(role));
+
+testDetails: "EMMA2050@" && "Eohio"
