@@ -338,6 +338,9 @@ const found = array2.some((element) => element > 10);
 
 const STAFF_ROLE = ["Application Developer", "Customer Service Officer", "Legal Officer", "Team Lead, Legal Services"]
 const role = "Internal Control"
-console.log("Check: ", STAFF_ROLE.includes(role));
+// console.log("Check: ", STAFF_ROLE.includes(role));
 
-testDetails: "EMMA2050@" && "Eohio"
+// const testDetails= "EMMA2050@" || "Eohio"
+
+// Working with on=bject inintilizer
+
