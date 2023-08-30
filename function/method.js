@@ -231,7 +231,7 @@ if (yazTest === 6) {
   // console.log("They are not equal")
 }
 
-const permissions = localStorage.getItem("permissions");
+// const permissions = localStorage.getItem("permissions");
 
 // console.log("MyPermission", permissions)
 
@@ -342,5 +342,25 @@ const role = "Internal Control"
 
 // const testDetails= "EMMA2050@" || "Eohio"
 
-// Working with on=bject inintilizer
+// Working with on=bject inintilizer, view notes on WeLearnJavaScript
+
+const person1 = {};
+person1['firstname'] = 'Mario';
+person1['lastname'] = 'Rossi';
+
+// console.log(person1.firstname);
+// Expected output: "Mario"
+
+let i = 0;
+
+let b = 5 + ++i;
+console.log("b: ", b);
+
+const a = {
+  [`foo${++i}`]: i,
+  [`foo${++i}`]: i,
+  [`foo${++i}`]: i,
+};
+
+// console.log("a: ", a);
 
