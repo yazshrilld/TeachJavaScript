@@ -362,5 +362,5 @@ const a = {
   [`foo${++i}`]: i,
 };
 
-// console.log("a: ", a);
+console.log("a_foo: ", a);
 
