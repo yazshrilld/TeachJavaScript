@@ -342,19 +342,20 @@ const role = "Internal Control"
 
 // const testDetails= "EMMA2050@" || "Eohio"
 
-// Working with on=bject inintilizer, view notes on WeLearnJavaScript
+// Working with object inintilizer, view notes on WeLearnJavaScript
 
 const person1 = {};
 person1['firstname'] = 'Mario';
 person1['lastname'] = 'Rossi';
 
-// console.log(person1.firstname);
+// console.log("Dot: ", `${person1.firstname}`);
+// console.log("Bracket: ", `${person1['firstname']}`);
 // Expected output: "Mario"
 
 let i = 0;
 
 let b = 5 + ++i;
-console.log("b: ", b);
+// console.log("b: ", b);
 
 const a = {
   [`foo${++i}`]: i,
@@ -362,7 +363,25 @@ const a = {
   [`foo${++i}`]: i,
 };
 
-console.log("a_foo: ", a);
+// console.log("a_foo: ", a);
+
+const items = ["A", "B", "C",]
+// console.log({items});
+
+// const [ x, y, z] = items
+// console.log({x, y, z});
+
+const yazNewObj = {
+  [items]: "Hello"
+}
+
+const yazNewObjs = {
+  yaxid: "Hello"
+}
+
+// console.log("Yaz: ", {yazNewObj, yazNewObjs});
+
+// console.log(`I am Yazid and I am ${yazNewObj !== "" ? JSON.stringify(yazNewObj[items]) : `not an item`}`);
 
 const identity = {
   DL: {
@@ -401,7 +420,7 @@ const identity = {
 };
 
 const aValue = identity["DL"].value
-console.log({aValue});
+// console.log({aValue});
 
 const userArrayDetails = {
   BVN: "abc",
@@ -412,7 +431,7 @@ const userArrayDetails = {
   licenseNumber: "pqr",
 }
 
-console.log({userArrayDetails});
+// console.log({userArrayDetails});
 
 const NIN_DUMMY_DATA = [
   {
@@ -483,4 +502,25 @@ const NIN_DUMMY_DATA = [
   },
 ];
 
-console.log({NIN_DUMMY_DATA});
+// console.log({NIN_DUMMY_DATA});
+const errMessage = "I am a boy from edo state"
+console.log({errMessage});
+if(errMessage.includes("boys")) {
+  console.log("true");
+} else {
+  console.log("false");
+}
+
+const information = {
+  date: errMessage,
+  year: 2022,
+  'account': "Savings",
+  responseStatus: true
+}
+const pars = JSON.parse(information)
+
+
+const stringifi = JSON.stringify(information)
+
+console.log({pars, stringifi});
+
