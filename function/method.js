@@ -89,9 +89,22 @@ const rows = [...Array(40).keys()].map((row) =>
   )
 );
 
-// let sliced = rows.slice(1, 4) && console.log("Yazid oooooooo");
+const myRows = [
+  {id: 123, name: "Yazid"},
+  {id: 124, name: "Yazida"},
+  {id: 125, name: "Yazidas"},
+  {id: 126, name: "AYazid"},
+  {id: 127, name: "AYazida"},
+  {id: 128, name: "AYazidas"},
+  {id: 129, name: "AYazidus"},
+]
+
+let sliced = myRows.slice(0, 4);
 // let sliced = rows.slice(0, 5) //checking to know if the data will return same result
-// console.log("sliced: ", sliced);
+console.log("slicedBefore: ", sliced);
+let mySpliceTest = myRows.splice(3, 1, "Blessing")
+console.log("slicedAfter: ", myRows);
+
 
 // sliced.map((row) => {
 //   console.log("MyRow: ", row[0].cNum);
@@ -147,6 +160,17 @@ const addValidatedAccount = () => {
   clonedJo.splice(0, 1);
   setJo(clonedJo);
 };
+
+let mammals = [
+	"dolphin",
+	"whale",
+	"manatee",
+];
+
+// Loop through each mammal
+for (let mammal of mammals) {
+	console.log((mammal));
+}
 
 const myPassword = "YazidMusa";
 
@@ -254,7 +278,7 @@ const handleSubmit = (values, { setSubmitting }) => {
   setSubmitting(false); //this resets the form
 };
 
-const myYazDentity =  {
+const myYazDentity = {
   DL: {
     name: "DL",
     payloadName: "driversLicence",
@@ -290,14 +314,14 @@ const myYazDentity =  {
   },
 };
 
-const log_1 = Object.keys(myYazDentity)
-const log_2 = Object.values(myYazDentity)
+const log_1 = Object.keys(myYazDentity);
+const log_2 = (myYazDentity);
 // console.log("Log_1: ", log_1)
 // console.log("Log_2: ", log_2)
-// console.log("Log_2: ", log_2[2].name)
-log_2.map((itm) => {
-  // console.log(itm)
-} )
+// console.log("Log_2: ", log_2["2"])
+// log_2.map((itm) => {
+//   console.log(itm)
+// });
 
 // {
 //   data.filter((item) => {
@@ -305,17 +329,16 @@ log_2.map((itm) => {
 //   })
 // }
 
-let YazCorpSearch = "Done"
+let YazCorpSearch = "Done";
 // console.log("YazCorpSearch: ", YazCorpSearch.length)
 
-const YAZ = `otp/send/otpUrl=https://www.providusbank.com?musa.yazid49@gmail.com`
-const YAZI = `otp/send/musa.yazid49@gmail.com?otpUrl=https://www.providusbank.com`
+const YAZ = `otp/send/otpUrl=https://www.providusbank.com?musa.yazid49@gmail.com`;
+const YAZI = `otp/send/musa.yazid49@gmail.com?otpUrl=https://www.providusbank.com`;
 // console.log("Check: ", YAZ === YAZI)
 const array1 = [5, 123, 8, 130, 44];
 
 const isLargeNumber = (element) => element > 13;
-const value = array1.findIndex(isLargeNumber)
-
+const value = array1.findIndex(isLargeNumber);
 
 // console.log("Value: ", array1[value]);
 
@@ -323,12 +346,21 @@ const array2 = [5, 12, 8, 130, 44];
 
 const found = array2.some((element) => element > 10);
 
+const idea = "My Name Is Yazid"
+// console.log("idea: ", idea.split())
+
+const originalString = "Javascript is a programming language. I'm learning javascript."
+
+// Search string for "javascript" and replace with "JavaScript"
+const newString = originalString.replace(/javascript/gi, "JaLvaScrIpt");
+
+console.log(newString);
+
 // console.log(found);
 // Expected output: true
 
 //Notes On Finding Values Inside An Array->
 // The find() method of Array instances returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
-
 // If you need the index of the found element in the array, use findIndex().
 // If you need to find the index of a value, use indexOf(). (It's similar to findIndex(), but checks each element for equality with the value instead of using a testing function.)
 // If you need to find if a value exists in an array, use includes(). Again, it checks each element for equality with the value instead of using a testing function.
@@ -336,8 +368,13 @@ const found = array2.some((element) => element > 10);
 
 // console.log("result: ", 0 > 0);
 
-const STAFF_ROLE = ["Application Developer", "Customer Service Officer", "Legal Officer", "Team Lead, Legal Services"]
-const role = "Internal Control"
+const STAFF_ROLE = [
+  "Application Developer",
+  "Customer Service Officer",
+  "Legal Officer",
+  "Team Lead, Legal Services",
+];
+const role = "Internal Control";
 // console.log("Check: ", STAFF_ROLE.includes(role));
 
 // const testDetails= "EMMA2050@" || "Eohio"
@@ -345,8 +382,8 @@ const role = "Internal Control"
 // Working with object inintilizer, view notes on WeLearnJavaScript
 
 const person1 = {};
-person1['firstname'] = 'Mario';
-person1['lastname'] = 'Rossi';
+person1["firstname"] = "Mario";
+person1["lastname"] = "Rossi";
 
 // console.log("Dot: ", `${person1.firstname}`);
 // console.log("Bracket: ", `${person1['firstname']}`);
@@ -365,19 +402,19 @@ const a = {
 
 // console.log("a_foo: ", a);
 
-const items = ["A", "B", "C",]
+const items = ["A", "B", "C"];
 // console.log({items});
 
 // const [ x, y, z] = items
 // console.log({x, y, z});
 
 const yazNewObj = {
-  [items]: "Hello"
-}
+  [items]: "Hello",
+};
 
 const yazNewObjs = {
-  yaxid: "Hello"
-}
+  yaxid: "Hello",
+};
 
 // console.log("Yaz: ", {yazNewObj, yazNewObjs});
 
@@ -419,7 +456,7 @@ const identity = {
   },
 };
 
-const aValue = identity["DL"].value
+const aValue = identity["DL"].value;
 // console.log({aValue});
 
 const userArrayDetails = {
@@ -429,7 +466,7 @@ const userArrayDetails = {
   identity: "jkl",
   issueDate: "mno" || "",
   licenseNumber: "pqr",
-}
+};
 
 // console.log({userArrayDetails});
 
@@ -503,24 +540,72 @@ const NIN_DUMMY_DATA = [
 ];
 
 // console.log({NIN_DUMMY_DATA});
-const errMessage = "I am a boy from edo state"
-console.log({errMessage});
-if(errMessage.includes("boys")) {
-  console.log("true");
+const errMessage = "I am a boy from edo state";
+// console.log({errMessage});
+if (errMessage.includes("boys")) {
+  // console.log("true");
 } else {
-  console.log("false");
+  // console.log("false");
 }
 
 const information = {
   date: errMessage,
   year: 2022,
-  'account': "Savings",
-  responseStatus: true
-}
-const pars = JSON.parse(information)
+  account: "Savings",
+  responseStatus: true,
+};
+// const pars = JSON.parse(information)
 
+const stringifi = JSON.stringify(information);
 
-const stringifi = JSON.stringify(information)
+// console.log({pars, stringifi});
+let errorMessages = `⛔️ Whoops, looks like something went wrong 👉️Invalid value "undefined" for header "clientid"`;
 
-console.log({pars, stringifi});
+const truncateStr = (str) => {
+  return str.length > 70 ? str.substring(0, 50) + "..." : str;
+};
 
+errorMessages = truncateStr(errorMessages);
+// console.log({errorMessages});
+
+// if (err) {
+//   console.log({err});
+//   const _dataError = err?.response;
+//   const _errCode_500 = err?.response?.data?.data[0]?.code;
+//   const _errCode_406 = err?.response?.status;
+//   if (_dataError) {
+//     setTimeout(() => {
+//       setTextContent(
+//         <p className="text-danger" style={{ textOverflow: "ellipsis" }}>
+//           {truncateStr(_dataError?.data?.data[0]?.message)}
+//         </p>
+//       );
+//     }, 1500);
+//   } else if (_errCode_406) {
+//     setTimeout(() => {
+//       setTextContent(
+//         <p className="text-danger" style={{ textOverflow: "ellipsis" }}>
+//           {truncateStr(err?.response?.data?.message)}
+//         </p>
+//       );
+//     }, 1500);
+//   }  else if (_errCode_500) {
+//     setTimeout(() => {
+//       setTextContent(
+//         <p className="text-danger" style={{ textOverflow: "ellipsis" }}>
+//           {truncateStr(err?.response?.data?.data[0]?.message)}
+//         </p>
+//       );
+//     }, 1500);
+//   }
+
+//   // if(err.response) {
+//   //   const _dataError = err?.response?.data?.data[0];
+//   //   console.log("errCode: ", `${_dataError?.message}`);
+//   // }
+// }
+
+//The indexOf is checking the string, if the search value is present in the string, if the value is present, it will return the value, else, it will return -1
+var format = new Intl.NumberFormat("en-GB");
+const txAmount = 134458130;
+// console.log(`$${format.format(txAmount)}`);
