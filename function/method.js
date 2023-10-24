@@ -47,10 +47,11 @@ const yazYaz = {
 // Using The Splice Method
 
 const Ayazida = ["Mon", "Wed", "Fri", "Sun"];
+// console.log("Original Array: ", Ayazida)
 Ayazida.splice(-3, 0);
 // console.log("Ayazida: ", Ayazida)
-Ayazida.splice(6, 0, "Sunday");
-// console.log("myAyazida", Ayazida)
+Ayazida.splice(1, 1,);
+console.log("myAyazidaReplace: ", Ayazida)
 Ayazida.splice(0, 2); //Fri, sun, sun
 // console.log("TheOnlyAyazida: ", Ayazida)
 Ayazida.splice(0, 5); //sun
@@ -101,9 +102,9 @@ const myRows = [
 
 let sliced = myRows.slice(0, 4);
 // let sliced = rows.slice(0, 5) //checking to know if the data will return same result
-console.log("slicedBefore: ", sliced);
+// console.log("slicedBefore: ", sliced);
 let mySpliceTest = myRows.splice(3, 1, "Blessing")
-console.log("slicedAfter: ", myRows);
+// console.log("slicedAfter: ", myRows);
 
 
 // sliced.map((row) => {
@@ -169,7 +170,7 @@ let mammals = [
 
 // Loop through each mammal
 for (let mammal of mammals) {
-	console.log((mammal));
+	// console.log((mammal));
 }
 
 const myPassword = "YazidMusa";
@@ -354,7 +355,7 @@ const originalString = "Javascript is a programming language. I'm learning javas
 // Search string for "javascript" and replace with "JavaScript"
 const newString = originalString.replace(/javascript/gi, "JaLvaScrIpt");
 
-console.log(newString);
+// console.log(newString);
 
 // console.log(found);
 // Expected output: true
@@ -609,3 +610,17 @@ errorMessages = truncateStr(errorMessages);
 var format = new Intl.NumberFormat("en-GB");
 const txAmount = 134458130;
 // console.log(`$${format.format(txAmount)}`);
+
+let maxRetry = 0;
+const loopRun = () => {
+  if(maxRetry < 5) {
+    // console.log("I will keep on running")
+    maxRetry++;
+    setTimeout(loopRun, 1000);
+  } else {
+    // console.log("I have completed 5 loops")
+  }
+}
+
+loopRun()
+ 
