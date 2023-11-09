@@ -1,3 +1,12 @@
+const fileUpload = document.querySelector(".fileUp");
+const image = document.querySelector(".images");
+
+// console.log(fileUpload);
+
+image.addEventListener("click", () => {
+  fileUpload.click();
+});
+
 let yazid = ["12", "2", "92", "172", "52", "300000000000000000000000000002"];
 // console.table("yazid: ", yazid)
 // console.log("yazida: ", yazid)
@@ -17,10 +26,12 @@ let activities = [
   ["sleep", 7, 4],
 ];
 // console.table(activities)
+console.log({activities})
 
-// console.log("myActivities: ", (activities[0][1]/24) * 100)
+console.log("myActivities: ", (activities[0][1]/3) * 100)
 // activities.forEach(act => console.log("myAct", act))
 // activities.forEach(act => console.log("myAct", act[2]))
+// the forEach does not return any value, it gives indefined, but it can be use to perform an executable operation.
 
 const myLoad = (drYaz) => {
   return [
@@ -50,8 +61,8 @@ const Ayazida = ["Mon", "Wed", "Fri", "Sun"];
 // console.log("Original Array: ", Ayazida)
 Ayazida.splice(-3, 0);
 // console.log("Ayazida: ", Ayazida)
-Ayazida.splice(1, 1,);
-console.log("myAyazidaReplace: ", Ayazida)
+Ayazida.splice(1, 1);
+// console.log("myAyazidaReplace: ", Ayazida)
 Ayazida.splice(0, 2); //Fri, sun, sun
 // console.log("TheOnlyAyazida: ", Ayazida)
 Ayazida.splice(0, 5); //sun
@@ -91,21 +102,20 @@ const rows = [...Array(40).keys()].map((row) =>
 );
 
 const myRows = [
-  {id: 123, name: "Yazid"},
-  {id: 124, name: "Yazida"},
-  {id: 125, name: "Yazidas"},
-  {id: 126, name: "AYazid"},
-  {id: 127, name: "AYazida"},
-  {id: 128, name: "AYazidas"},
-  {id: 129, name: "AYazidus"},
-]
+  { id: 123, name: "Yazid" },
+  { id: 124, name: "Yazida" },
+  { id: 125, name: "Yazidas" },
+  { id: 126, name: "AYazid" },
+  { id: 127, name: "AYazida" },
+  { id: 128, name: "AYazidas" },
+  { id: 129, name: "AYazidus" },
+];
 
 let sliced = myRows.slice(0, 4);
 // let sliced = rows.slice(0, 5) //checking to know if the data will return same result
 // console.log("slicedBefore: ", sliced);
-let mySpliceTest = myRows.splice(3, 1, "Blessing")
+let mySpliceTest = myRows.splice(3, 1, "Blessing");
 // console.log("slicedAfter: ", myRows);
-
 
 // sliced.map((row) => {
 //   console.log("MyRow: ", row[0].cNum);
@@ -162,15 +172,11 @@ const addValidatedAccount = () => {
   setJo(clonedJo);
 };
 
-let mammals = [
-	"dolphin",
-	"whale",
-	"manatee",
-];
+let mammals = ["dolphin", "whale", "manatee"];
 
 // Loop through each mammal
 for (let mammal of mammals) {
-	// console.log((mammal));
+  // console.log((mammal));
 }
 
 const myPassword = "YazidMusa";
@@ -316,7 +322,7 @@ const myYazDentity = {
 };
 
 const log_1 = Object.keys(myYazDentity);
-const log_2 = (myYazDentity);
+const log_2 = myYazDentity;
 // console.log("Log_1: ", log_1)
 // console.log("Log_2: ", log_2)
 // console.log("Log_2: ", log_2["2"])
@@ -347,10 +353,11 @@ const array2 = [5, 12, 8, 130, 44];
 
 const found = array2.some((element) => element > 10);
 
-const idea = "My Name Is Yazid"
+const idea = "My Name Is Yazid";
 // console.log("idea: ", idea.split())
 
-const originalString = "Javascript is a programming language. I'm learning javascript."
+const originalString =
+  "Javascript is a programming language. I'm learning javascript.";
 
 // Search string for "javascript" and replace with "JavaScript"
 const newString = originalString.replace(/javascript/gi, "JaLvaScrIpt");
@@ -543,10 +550,17 @@ const NIN_DUMMY_DATA = [
 // console.log({NIN_DUMMY_DATA});
 const errMessage = "I am a boy from edo state";
 // console.log({errMessage});
-if (errMessage.includes("boys")) {
+if (errMessage.includes("boy")) {
   // console.log("true");
 } else {
-  // console.log("false");
+  console.log("false");
+}
+
+const errorArray = [1, 2, 3, 4, 5, 6, 7, 8];
+if (errorArray.includes(2)) {
+  // console.log("it includes");
+} else {
+  // console.log("does not include")
 }
 
 const information = {
@@ -611,16 +625,68 @@ var format = new Intl.NumberFormat("en-GB");
 const txAmount = 134458130;
 // console.log(`$${format.format(txAmount)}`);
 
-let maxRetry = 0;
-const loopRun = () => {
-  if(maxRetry < 5) {
-    // console.log("I will keep on running")
-    maxRetry++;
-    setTimeout(loopRun, 1000);
-  } else {
-    // console.log("I have completed 5 loops")
-  }
-}
+//Here we are trying to achieve a setTimeout to loop through a couple of times and stop after the maximum retry is reached
+// let maxRetry = 0;
+// const loopRun = () => {
+//   if(maxRetry < 5) {
+//     // console.log("I will keep on running")
+//     maxRetry++;
+//     setTimeout(loopRun, 1000);
+//   } else {
+//     // console.log("I have completed 5 loops")
+//   }
+// }
 
-loopRun()
- 
+// loopRun()
+
+const logRow = {
+  referenceNumber: 1100924,
+  customerName: "Musa Yazid",
+  accountNumber: 3291233455,
+  lienAmount: 800,
+  debitAmount: 4,
+  status: "Approved",
+  code: 11,
+};
+
+const logColumn = {
+  id: "debitAmount",
+  label: "Reference Number",
+  minWidth: 90,
+};
+
+// console.log("Log Row: ", logRow);
+// console.log("Log Column: ", logColumn);
+// console.log("Debit Amount: ", logRow[logColumn.id]);
+
+const rowArray = [123, "oladele", 5900335850, 12000, 12000, 200];
+
+// console.log("Row Array Value: ", rowArray[1]);
+
+const colsArray = [
+  "REFERENCE",
+  "NAME",
+  "ACCOUNT",
+  "LIEN_AMOUNT",
+  "DEBIT_AMOUNT",
+  "CHARGES",
+];
+
+// console.log("Debit Amount: ", Object.keys(rowArray) === Object.values(colsArray));
+// console.log("Debit Amount: ", Object.keys(rowArray));
+// console.log("Debit Amount: ", rowArray[123] === Object.values(colsArray));
+
+const yazArrays = [
+  "abc",
+  "def",
+  "ghi",
+  "jkl",
+  "mno",
+  "pqr",
+  "stu",
+  "vwx",
+  "yz",
+];
+
+const [first, ...rest] = yazArrays
+// console.log({yazArrays, first, rest})
