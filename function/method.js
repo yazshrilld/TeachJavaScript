@@ -8,12 +8,12 @@ image.addEventListener("click", () => {
 });
 
 let yazid = ["12", "2", "92", "172", "52", "300000000000000000000000000002"];
-// console.table("yazid: ", yazid)
+console.log("yazid: ", yazid);
 // console.log("yazida: ", yazid)
 const check = yazid.map((yaz) => yaz);
 // console.log("yaz: ", check)
 const incl = check.every((inc) => inc.includes("2"));
-// console.log("yazincludes: ", incl)
+console.log("yazincludes: ", incl);
 
 //Learning MultiDimensionalArrays
 
@@ -26,9 +26,9 @@ let activities = [
   ["sleep", 7, 4],
 ];
 // console.table(activities)
-console.log({activities})
+// console.log({activities})
 
-console.log("myActivities: ", (activities[0][1]/3) * 100)
+// console.log("myActivities: ", (activities[0][1]/3) * 100)
 // activities.forEach(act => console.log("myAct", act))
 // activities.forEach(act => console.log("myAct", act[2]))
 // the forEach does not return any value, it gives indefined, but it can be use to perform an executable operation.
@@ -688,5 +688,62 @@ const yazArrays = [
   "yz",
 ];
 
-const [first, ...rest] = yazArrays
+const [first, ...rest] = yazArrays;
 // console.log({yazArrays, first, rest})
+
+const namesYaz = "REFERENCE";
+// console.log(namesYaz.toLowerCase())
+
+const yazNum = [
+  "bisi",
+  "ishola",
+  "micheal",
+  "amah",
+  "faith",
+  "ojukwu",
+  "ambrose",
+  "efe",
+  "ade",
+];
+const abc = "amah";
+const view = yazNum.filter((a) => a === abc); //this outputs all the array items except amah, because as it loops through the array from the first element at index 0, itwhen it gets to the element that is
+//Note that The filter method originally is to display the truthy value, but we can display both true and false. The filter array method displays some array data weda the conditional is true or false, so but it depends on you, what you want to display, if you want to display the true, you write the conditional that gives true, but if you want to display the false, you write the conditional that displays the false.
+// console.log({ view });
+const fred = "amah";
+const abcd = "amah";
+// console.log(fred === abcd)
+
+const yazNums = [
+  "bisi",
+  "ishola",
+  "micheal",
+  "amah",
+  "faith",
+  "ojukwu",
+  "ambrose",
+  "efe",
+  "ade",
+];
+const abcs = "amad";
+const views = yazNums.filter((a) => a === abcs); //this outputs all the array items except amah, because as it loops through the array from the first element at index 0, itwhen it gets to the element that is
+//Note that The filter method originally is to display the truthy value, but we can display both true and false. The filter array method displays some array data weda the conditional is true or false, so but it depends on you, what you want to display, if you want to display the true, you write the conditional that gives true, but if you want to display the false, you write the conditional that displays the false.
+// console.log({ view });
+const freds = "amad";
+const abcds = "amad";
+// console.log(freds === abcds)
+
+//This is a pure function BECAUSE ITS VARIABLES ARE WITHIN
+const baddssss = (ass, bss) => {
+  return ass + bss;
+};
+
+console.log(baddssss(5, 6));
+
+//This is not a pure function BECAUSE ITS VARIABLES ARE OUTSIDE
+let cdy = 5;
+let cdx = 7;
+const addssss = (ass, bss) => {
+  return ass + bss;
+};
+
+console.log(addssss(cdy, cdx));
