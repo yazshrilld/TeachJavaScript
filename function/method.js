@@ -737,7 +737,7 @@ const baddssss = (ass, bss) => {
   return ass + bss;
 };
 
-console.log(baddssss(5, 6));
+// console.log(baddssss(5, 6));
 
 //This is not a pure function BECAUSE ITS VARIABLES ARE OUTSIDE
 let cdy = 5;
@@ -746,4 +746,4 @@ const addssss = (ass, bss) => {
   return ass + bss;
 };
 
-console.log(addssss(cdy, cdx));
+// console.log(addssss(cdy, cdx));
