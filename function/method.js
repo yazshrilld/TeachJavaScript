@@ -8,12 +8,12 @@ image.addEventListener("click", () => {
 });
 
 let yazid = ["12", "2", "92", "172", "52", "300000000000000000000000000002"];
-console.log("yazid: ", yazid);
+// console.log("yazid: ", yazid);
 // console.log("yazida: ", yazid)
 const check = yazid.map((yaz) => yaz);
 // console.log("yaz: ", check)
 const incl = check.every((inc) => inc.includes("2"));
-console.log("yazincludes: ", incl);
+// console.log("yazincludes: ", incl);
 
 //Learning MultiDimensionalArrays
 
@@ -747,3 +747,15 @@ const addssss = (ass, bss) => {
 };
 
 // console.log(addssss(cdy, cdx));
+
+const add = (a, b) => {
+  return a + b
+}
+
+const logMessage = (message) => {
+  console.log(message);
+}
+
+logMessage("Hello")
+logMessage(add(2, 3))
+logMessage(add("a", 3))
