@@ -753,7 +753,7 @@ const add = (a, b) => {
 }
 
 const logMessage = (message) => {
-  console.log(message);
+  // console.log(message);
 }
 
 logMessage("Hello")
