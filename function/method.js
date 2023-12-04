@@ -749,13 +749,44 @@ const addssss = (bass, bss) => {
 // console.log(addssss(cdy, cdx));
 
 const add = (a, b) => {
-  return a + b
-}
+  return a + b;
+};
 
 const logMessage = (message) => {
   // console.log(message);
-}
+};
 
-logMessage("Hello")
-logMessage(add(2, 3))
-logMessage(add("a", 3))
+logMessage("Hello");
+logMessage(add(2, 3));
+logMessage(add("a", 3));
+
+const yazidBulk = "approvedPlacement";
+// console.log("Transform: ", yazidBulk)
+const yazUp =
+  yazidBulk.charAt(0).toUpperCase() +
+  " " +
+  yazidBulk.charAt(0, 5).toLowerCase() +
+  "Lien";
+const checksd = yazidBulk
+  .replace(/[A-Z]/g, (c) => `${" "}${c.toLowerCase()}`)
+  .replace("placement", "Lien")
+  .replace(/[a-z]/, (c) => `${c.toUpperCase()}`);
+const checksde = yazidBulk.replace(/[A-Z]/g, (c) => console.log("View: ", c));
+const ck = yazidBulk
+  .replace(/[a-z]*/g, (str) => "-" + str.toUpperCase() + "-")
+  .replace("--", "-")
+  .replace(/(^-)|(-$)/g, "");
+// console.log("Transform: ", yazidBulk);
+// console.log("Transform Up: ", yazUp);
+// console.log("Transform Check: ", checksd);
+// console.log("Transform Checke: ", checksde);
+// console.log("Transform Ck: ", ck);
+
+const myNewObject = {
+  failedPlacement: 0,
+  pendingPlacement: 18,
+  approvedPlacement: 16,
+  declinedPlacement: 5,
+};
+
+console.log({myNewObject})
