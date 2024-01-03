@@ -10,9 +10,9 @@ image.addEventListener("click", () => {
 let yazid = ["12", "2", "92", "172", "52", "300000000000000000000000000002"];
 // console.log("yazid: ", yazid);
 // console.log("yazida: ", yazid)
-const check = yazid.map((yaz) => yaz);
+const check = yazid.map((yaz) => console.log("yazi: ", yaz));
 // console.log("yaz: ", check)
-const incl = check.every((inc) => inc.includes("2"));
+// const incl = check.every((inc) => inc.includes("2"));
 // console.log("yazincludes: ", incl);
 
 //Learning MultiDimensionalArrays
@@ -771,7 +771,7 @@ const checksd = yazidBulk
   .replace(/[A-Z]/g, (c) => `${" "}${c.toLowerCase()}`)
   .replace("placement", "Lien")
   .replace(/[a-z]/, (c) => `${c.toUpperCase()}`);
-const checksde = yazidBulk.replace(/[A-Z]/g, (c) => console.log("View: ", c));
+// const checksde = yazidBulk.replace(/[A-Z]/g, (c) => console.log("View: ", c));
 const ck = yazidBulk
   .replace(/[a-z]*/g, (str) => "-" + str.toUpperCase() + "-")
   .replace("--", "-")
@@ -787,6 +787,26 @@ const myNewObject = {
   pendingPlacement: 18,
   approvedPlacement: 16,
   declinedPlacement: 5,
+  gender: {
+    name: "Yazid",
+    age: 29,
+    sex: "male",
+  },
 };
 
-console.log({myNewObject})
+const myNewObjects = [
+  "failedPlacement",
+  "Placement",
+  "edPlacement",
+  "edPlacement",
+  "ag",
+];
+
+// console.log({ myNewObject });
+// console.log("Types Of: ", typeof(myNewObjects));
+// console.log("Type Of: ", typeof(myNewObject));
+
+// Object.entries(myNewObject).map((obj) => console.log(obj));
+// myNewObjects.map((obj) => console.log(obj));
+
+//Data Transformtion Objects and Arrays
