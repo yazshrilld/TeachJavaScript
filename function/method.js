@@ -802,6 +802,7 @@ const myNewObjects = [
   "ag",
 ];
 
+// console.log(sum(range(1, 10)))
 // console.log({ myNewObject });
 // console.log("Types Of: ", typeof(myNewObjects));
 // console.log("Type Of: ", typeof(myNewObject));
@@ -810,3 +811,18 @@ const myNewObjects = [
 // myNewObjects.map((obj) => console.log(obj));
 
 //Data Transformtion Objects and Arrays
+const myFuncArr = ["2","4","6","8","10",]
+
+const myFuncYaz = (aNumber) => {
+  if (!aNumber) {
+    // console.log("There is no number");
+    // return;
+  } else {
+    // console.log("There is a number");
+  }
+
+  const exstnRcd = myFuncArr.find((item) => item === aNumber)
+  // console.log(exstnRcd)
+};
+
+myFuncYaz("6")
