@@ -10,7 +10,7 @@ image.addEventListener("click", () => {
 let yazid = ["12", "2", "92", "172", "52", "300000000000000000000000000002"];
 // console.log("yazid: ", yazid);
 // console.log("yazida: ", yazid)
-const check = yazid.map((yaz) => console.log("yazi: ", yaz));
+// const check = yazid.map((yaz) => console.log("yazi: ", yaz));
 // console.log("yaz: ", check)
 // const incl = check.every((inc) => inc.includes("2"));
 // console.log("yazincludes: ", incl);
@@ -826,3 +826,5 @@ const myFuncYaz = (aNumber) => {
 };
 
 myFuncYaz("6")
+
+
