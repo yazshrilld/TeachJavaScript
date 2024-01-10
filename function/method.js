@@ -23,7 +23,7 @@ let activities = [
   ["Eat", 1, "food"],
   ["Comute", 2, "transportation"],
   ["Play Game", 1, 35],
-  ["sleep", 7, 4],
+  ["sleep", 7, 5],
 ];
 // console.table(activities)
 // console.log({activities})
