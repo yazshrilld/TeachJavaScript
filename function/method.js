@@ -827,4 +827,8 @@ const myFuncYaz = (aNumber) => {
 
 myFuncYaz("6")
 
+const email = "yazshrilld"
+const myMail = `${email}@mail.com`
+// console.log({email, myMail})
+
 
