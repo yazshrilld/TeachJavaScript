@@ -220,7 +220,7 @@ const name2 = "itopa";
 
 const testName = "Yazid";
 
-console.log("fromTestName: ", testName.split("")[0]);
+// console.log("fromTestName: ", testName.split("")[0]);
 
 const roles = [
   "Team Lead, Legal Services",
