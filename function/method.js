@@ -219,9 +219,8 @@ const name2 = "itopa";
 // });
 
 const testName = "Yazid";
-testName.split("").map((tst) => {
-  // console.log("fromTestName: ", tst);
-});
+
+console.log("fromTestName: ", testName.split("")[0]);
 
 const roles = [
   "Team Lead, Legal Services",
@@ -811,24 +810,22 @@ const myNewObjects = [
 // myNewObjects.map((obj) => console.log(obj));
 
 //Data Transformtion Objects and Arrays
-const myFuncArr = ["2","4","6","8","10",]
+const myFuncArr = ["2", "4", "6", "8", "10"];
 
 const myFuncYaz = (aNumber) => {
   if (!aNumber) {
     // console.log("There is no number");
-    // return;
+    return;
   } else {
     // console.log("There is a number");
   }
 
-  const exstnRcd = myFuncArr.find((item) => item === aNumber)
+  const exstnRcd = myFuncArr.find((item) => item === aNumber);
   // console.log(exstnRcd)
 };
 
-myFuncYaz("6")
+myFuncYaz("6");
 
-const email = "yazshrilld"
-const myMail = `${email}@mail.com`
+const email = "yazshrilld";
+const myMail = `${email}@mail.com`;
 // console.log({email, myMail})
-
-
