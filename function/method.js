@@ -839,8 +839,8 @@ const modalType = {
   ghk: "ttt",
 };
 
-if( modalType.xyz) {
-// console.log("true")
+if (modalType.xyz) {
+  // console.log("true")
 } else {
   // console.log("false")
 }
@@ -852,19 +852,47 @@ if( modalType.xyz) {
 
 //So the application would have a login system, and when user logs in, a page shows the users two fields Reason for loan and amount, then onClick of submit button, cards of number of months of duration will be created and then each card carries a summary of details which includes the interest rate and other information's on the loan, at this they click on proceed and then the proceed shows them a full summary of hi name, account, bank, date, address and when they click on submit, they get an email of when the transfer would be given to them.
 
-//On the other end, there is a dashboard that will be created for the users and then the admin, the admin will see different component, they will see old loan, new loan, completed loan, pending loan, debtors, the dashboard will show a count of all the loans and other information's. 
+//On the other end, there is a dashboard that will be created for the users and then the admin, the admin will see different component, they will see old loan, new loan, completed loan, pending loan, debtors, the dashboard will show a count of all the loans and other information's.
 
-const nameOfYazid = "Yazid,Itopa,Umar,Musa,Emmanuel,Solomon"
-const YazName = nameOfYazid.split(",")
+const nameOfYazid = "Yazid,Itopa,Umar,Musa,Emmanuel,Solomon";
+const YazName = nameOfYazid.split(",");
 // console.log({nameOfYazid, YazName})
 
-if(YazName !== null && YazName !== undefined) {
-  console.log({YazName})
-  let isYazid = YazName.indexOf("Yazid")
-  let isItopa = YazName.indexOf("Itopa")
-  let isUmar = YazName.indexOf("Umar")
-  let isMusa = YazName.indexOf("Musa")
-  let isEmmanuel = YazName.indexOf("Emmanuel")
-  let isSolomon = YazName.indexOf("Solomon")
-  console.log({isYazid, isItopa, isUmar, isMusa, isSolomon, isEmmanuel, isSolomon})
+if (YazName !== null && YazName !== undefined) {
+  // console.log({YazName})
+  let isYazid = YazName.indexOf("Yazid");
+  let isItopa = YazName.indexOf("Itopa");
+  let isUmar = YazName.indexOf("Umar");
+  let isMusa = YazName.indexOf("Musa");
+  let isEmmanuel = YazName.indexOf("Emmanuel");
+  let isSolomon = YazName.indexOf("Solomon");
+  // console.log({isYazid, isItopa, isUmar, isMusa, isSolomon, isEmmanuel, isSolomon})
 }
+
+let yazNumss = 0;
+while (yazNumss < 12) {
+  // console.log({ yazNumss });
+  yazNumss = yazNumss + 2;
+}
+
+let yazNumsses = 0;
+if (yazNumsses <= 12) {
+  // console.log({ yazNumsses });
+  yazNumsses = yazNumsses + 2;
+}
+
+let finalNumber = 1024;
+let yazzNums = 2;
+while (yazzNums <= finalNumber) {
+  // console.log({ yazzNums });
+  yazzNums = yazzNums * 2;
+}
+
+let result = 1;
+let counter = 0;
+while (counter < 10) {
+  result = result * 2;
+  counter = counter + 1;
+}
+
+console.log({result, counter})
