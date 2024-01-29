@@ -902,5 +902,5 @@ const transform = excelData.replace(/ /g, "_").toUpperCase()
 console.log({excelData, transform})
 
 formik.resetForm({
-  values: { name: 'Custom initial values', email: '' },
+  values: { name: 'Custom initial values', email: 'yazid@mail.com' },
 });
