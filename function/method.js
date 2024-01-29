@@ -895,4 +895,12 @@ while (counter < 10) {
   counter = counter + 1;
 }
 
-console.log({result, counter})
+// console.log({result, counter})
+
+const excelData = "Business Name"
+const transform = excelData.replace(/ /g, "_").toUpperCase()
+console.log({excelData, transform})
+
+formik.resetForm({
+  values: { name: 'Custom initial values', email: '' },
+});
