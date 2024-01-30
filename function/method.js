@@ -869,38 +869,18 @@ if (YazName !== null && YazName !== undefined) {
   // console.log({isYazid, isItopa, isUmar, isMusa, isSolomon, isEmmanuel, isSolomon})
 }
 
-let yazNumss = 0;
-while (yazNumss < 12) {
-  // console.log({ yazNumss });
-  yazNumss = yazNumss + 2;
-}
-
-let yazNumsses = 0;
-if (yazNumsses <= 12) {
-  // console.log({ yazNumsses });
-  yazNumsses = yazNumsses + 2;
-}
-
-let finalNumber = 1024;
-let yazzNums = 2;
-while (yazzNums <= finalNumber) {
-  // console.log({ yazzNums });
-  yazzNums = yazzNums * 2;
-}
-
-let result = 1;
-let counter = 0;
-while (counter < 10) {
-  result = result * 2;
-  counter = counter + 1;
-}
-
 // console.log({result, counter})
 
 const excelData = "Business Name"
 const transform = excelData.replace(/ /g, "_").toUpperCase()
-console.log({excelData, transform})
+// console.log({excelData, transform})
 
-formik.resetForm({
-  values: { name: 'Custom initial values', email: 'yazid@mail.com' },
-});
+// let yaziidName;
+// do {
+// yaziidName = prompt("Who are you?");
+// } while (!yaziidName);
+// console.log(yaziidName);
+
+
+
+
