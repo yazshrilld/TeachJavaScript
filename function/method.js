@@ -830,8 +830,7 @@ const email = "yazshrilld \nnew Bank owner";
 const myMail = `${email}@mail.com`;
 // console.log({email, myMail})
 
-// console.log("This is a \nNew line")
-// console.log("This is an \n Old line")
+
 
 const modalType = {
   xyz: "wwww",

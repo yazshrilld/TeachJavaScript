@@ -3,6 +3,9 @@
 // let theNumber = Number(prompt("Pick a Number"))
 // console.log("Your number is the square root of " + theNumber * theNumber)
 
+// console.log(`My a \nNew line`);
+// console.log("This is an \n Old line");
+
 // let yazNumss = 0;
 // while (yazNumss < 12) {
 //   // console.log({ yazNumss });
@@ -28,6 +31,7 @@
 //   results = results * 2;
 //   counter = counter + 1;
 // }
+// console.log({results})
 /////////////////////////************ */   THE LOOPING SYSTEM IN JAVASCRIPT  */************////////////////////
 // let yaziidName;
 // do {
@@ -65,16 +69,58 @@
 
 // number = number + 1 ;  number +=1;  number++ ;
 
-switch (prompt("What is the weather like?")) {
-  case "rainy":
-    console.log("Remember to bring an umbrella.");
-    break;
-  case "sunny":
-    console.log("Dress lightly.");
-  case "cloudy":
-    console.log("Go outside.");
-    break;
-  default:
-    console.log("Unknown weather type!");
-    break;
+// switch (prompt("What is the weather like?")) {
+//   case "rainy":
+//     console.log("Remember to bring an umbrella.");
+//     break;
+//   case "sunny":
+//     console.log("Dress lightly.");
+//   case "cloudy":
+//     console.log("Go outside.");
+//     break;
+//   default:
+//     console.log("Unknown weather type!");
+//     break;
+// }
+
+// let abc = "#"
+// console.log("Check: ", abc + abc + abc)
+
+//
+// for (let n = 1; n <= 100; n++) {
+//   let output = "";
+//   if (n % 3 == 0) output += "Fizz";
+//   if (n % 5 == 0) output += "Buzz";
+//   console.log(output || n);
+// }
+
+let abc = "";
+for (let counts = 1; abc.length < 31; counts++) {
+  if (counts % 2 === 0) {
+    abc = abc + " ";
+    if (abc.length > 5) {
+      abc = abc + "$";
+      console.log(`${abc}\n`);
+    } else {
+      console.log("Count: ", `${abc}: ${abc.length}`);
+    }
+  } else if (counts % 2 !== 0) {
+    abc = abc + "#";
+    // console.log(`${abc}\n`);
+    console.log("Count: ", `${abc}: ${abc.length}`);
+  }
 }
+
+// let result = 1;
+// for (let counter = 0; counter < 6; counter++) {
+//   result *= 2;
+// }
+// console.log({ result });
+
+// let results = 1;
+// let counter = 0;
+// while (counter < 10) {
+//   results = results * 2;
+//   counter = counter + 1;
+// }
+// console.log({results})
