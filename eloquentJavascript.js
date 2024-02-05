@@ -94,22 +94,17 @@
 //   console.log(output || n);
 // }
 
-let abc = "";
-for (let counts = 1; abc.length < 31; counts++) {
-  if (counts % 2 === 0) {
-    abc = abc + " ";
-    if (abc.length > 5) {
-      abc = abc + "$";
-      console.log(`${abc}\n`);
-    } else {
-      console.log("Count: ", `${abc}: ${abc.length}`);
-    }
-  } else if (counts % 2 !== 0) {
-    abc = abc + "#";
-    // console.log(`${abc}\n`);
-    console.log("Count: ", `${abc}: ${abc.length}`);
-  }
-}
+// let abc = "";
+// for (let counts = 1; abc.length < 64; counts++) {
+//   if ( abc.length % 2 === 0 ) {
+//     abc = abc + " "
+//   }
+//   if (abc.length % 2 !== 0) {
+//     abc = abc + "$"
+//   }
+//   abc = abc + "#"
+//   console.log(`${abc}: ${abc.length}`)
+// }
 
 // let result = 1;
 // for (let counter = 0; counter < 6; counter++) {
@@ -124,3 +119,43 @@ for (let counts = 1; abc.length < 31; counts++) {
 //   counter = counter + 1;
 // }
 // console.log({results})
+
+// let abc = "";
+// for (let counts = 1; abc.length < 64; counts++) {
+//   if (counts % 2 === 0 && abc.length === 64) {
+//     abc = abc + " ";
+//     if (abc.length > 5) {
+//       abc = abc + "$";
+//       console.log(`${abc}\n`);
+//     } else {
+//       console.log("Count: ", `${abc}: ${abc.length}`);
+//     }
+//     console.log("first: ", abc.length);
+//   } else if (counts % 2 !== 0) {
+//     abc = abc + "#";
+//     // console.log(`${abc}\n`);
+//     console.log("Count: ", `${abc}: ${abc.length}`);
+//   }
+// }
+
+
+
+const printBoard = (row, column) => {
+  let final = ""
+  for (let i = 0; i < row; i++) {
+    let output = ""
+    for(let j = 0; j < column; j++) {
+      if ((i+j) % 2 === 0) {
+        output += " "
+      } else {
+        output += "#"
+      }
+    }
+   final += output;
+   final += "\n"
+  }
+  return final;
+}
+
+
+console.log(printBoard(8, 8))
