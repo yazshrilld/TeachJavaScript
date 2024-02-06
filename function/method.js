@@ -830,8 +830,6 @@ const email = "yazshrilld \nnew Bank owner";
 const myMail = `${email}@mail.com`;
 // console.log({email, myMail})
 
-
-
 const modalType = {
   xyz: "wwww",
   def: "uuu",
@@ -870,8 +868,8 @@ if (YazName !== null && YazName !== undefined) {
 
 // console.log({result, counter})
 
-const excelData = "Business Name"
-const transform = excelData.replace(/ /g, "_").toUpperCase()
+const excelData = "Business Name";
+const transform = excelData.replace(/ /g, "_").toUpperCase();
 // console.log({excelData, transform})
 
 // let yaziidName;
@@ -880,6 +878,7 @@ const transform = excelData.replace(/ /g, "_").toUpperCase()
 // } while (!yaziidName);
 // console.log(yaziidName);
 
+const pdf =
+  "C:/Deployments/corperatesearch/src/main/resources/static/requests/yaz names inc/596421703491324.pdf";
 
-
-
+console.log(pdf.split("/")[pdf.split("/").length - 1]);
