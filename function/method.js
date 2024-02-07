@@ -881,4 +881,4 @@ const transform = excelData.replace(/ /g, "_").toUpperCase();
 const pdf =
   "C:/Deployments/corperatesearch/src/main/resources/static/requests/yaz names inc/596421703491324.pdf";
 
-console.log(pdf.split("/")[pdf.split("/").length - 1]);
+console.log(pdf.split("/")[pdf.split("/").length - 1]); //split is a marvelous array method
