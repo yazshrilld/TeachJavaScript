@@ -51,9 +51,9 @@
 
 // let result = 1;
 // for (let counter = 0; counter < 10; counter = counter + 1) {
-// result = result * 2;
+//   result = result * 2;
 // }
-// console.log("Result: ", result)
+// console.log("Result: ", result);
 // → 1
 // for ( let counter = 20; ; counter = counter + 1 ) {
 //     if ( counter % 8 == 0 ) {
@@ -138,24 +138,46 @@
 //   }
 // }
 
+// CHAPTER -3: LEARNING FUNCTIONS
 
+// const square = function (x) {
+//   return x * x;
+// };
 
-const printBoard = (row, column) => {
-  let final = ""
-  for (let i = 0; i < row; i++) {
-    let output = ""
-    for(let j = 0; j < column; j++) {
-      if ((i+j) % 2 === 0) {
-        output += " "
-      } else {
-        output += "#"
-      }
-    }
-   final += output;
-   final += "\n"
+// console.log("Square: ", square(5));
+
+// function exam() {
+//   const YazidMusa = "A name of a Great homo sapien born in 1964";
+//   console.log("Great Man: ", YazidMusa);
+// }
+
+// exam();
+
+// let x = 10;
+// if (true) {
+// let y = 20;
+// var z = 30;
+// x = 70
+// console.log(x + y + z);
+// }
+
+// const halve = function (n) {
+//   return n / 2;
+// };
+// let n = 10;
+// console.log(halve(100));
+// // → 50
+// console.log(n);
+// // → 10
+
+const power = (a, exp = 2) => {
+  let res = 1;
+  for (let num = 0; num < exp; num++) {
+    res = res * a;
   }
-  return final;
-}
+  console.log("Resultssss: ", res);
+  return res;
+};
 
-
-console.log(printBoard(8, 8))
+power(2);
+power(2, 6);

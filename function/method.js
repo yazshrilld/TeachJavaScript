@@ -882,3 +882,6 @@ const pdf =
   "C:/Deployments/corperatesearch/src/main/resources/static/requests/yaz names inc/596421703491324.pdf";
 
 console.log(pdf.split("/")[pdf.split("/").length - 1]); //split is a marvelous array method
+
+const chNum = 5/3
+console.log({chNum})

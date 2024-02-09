@@ -34,3 +34,26 @@
 //   if (n % 5 == 0) output += "Buzz";
 //   console.log(output || n);
 // }
+
+// ///** EXCERCISE TWO -FIZZBUZZ**///
+// //MI could not solve it and seeked for help after 3days, 8 total hours of thinking
+//UZOR'S SOLUTION
+// const printBoard = (row, column) => {
+//     let final = ""
+//     for (let i = 0; i < row; i++) {
+//       let output = ""
+//       for(let j = 0; j < column; j++) {
+//         if ((i+j) % 2 === 0) {
+//           output += " "
+//         } else {
+//           output += "#"
+//         }
+//       }
+//      final += output;
+//      final += "\n"
+//     }
+//     return final;
+//   }
+  
+  
+//   console.log(printBoard(8, 8))
