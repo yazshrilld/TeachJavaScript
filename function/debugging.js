@@ -5,4 +5,5 @@ window.onload = () => {
     i += 1;
     console.log(i);
   });
+  console.log("Button: ", btn)
 };
