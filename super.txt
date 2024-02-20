@@ -1,0 +1,72 @@
+SUPER APP LIST OF ENPOINTS ACCORDING TO THE CURRENT UI DESIGN
+1.) Login Endpoint
+2.) Signup Endpoint
+ 
+Quick Menu
+Account: Open Instant Account
+1.) KYC details of customers endpoint
+2.) Validate BVN endpoint
+3.) Validate Identification endpoint
+4.) Get generated account number endpoint
+ 
+Account: View VPN
+1.) Get BVN endpoint
+2.) Validate BVN endpoint
+ 
+Account: Transaction History
+1.) Get transaction history endpoint
+2.) Get transaction history endpoint by date
+ 
+Account: Download Statement
+1.) Get statement endpoint
+2.) Get statement endpoint by date
+ 
+Account: Account Officer
+1.) Get account officer endpoint by phone number
+2.) Get account officer endpoint by account number
+ 
+Account: Beneficiaries
+1.) Get beneficiaries endpoint
+ 
+BILLS PAYMENT
+Bills Payment: Bills
+1.) View current balance endpoint
+2.) View transaction history of bills only endpoints
+3.) Statistics endpoint to show percentage of most bills paid
+4.) View List of bills endpoint (Waste Bill, Electricity Bill, Airtime, Data, Cable TV, Transport, Shippment)
+
+Bills Payment: Airtime
+1.) Aitrime purchase endpoint
+2.) Buy for beneficiary endpoint
+
+Bills Payment: Airtime
+1.) Data purchase endpoint
+2.) Buy for beneficiary endpoint
+
+Bills Payment: Cable TV
+1.) View list of TV purchase endpoints
+2.) Cable TV purchase endpoint
+
+Bills Payment: Electricity
+1.) Data purchase endpoint
+2.) Buy Electricity bill for beneficiary endpoint
+
+Bills Payment: Betting Wallet (No Idea on how this works)
+
+Bills Payment: Transport
+1.) View list of Travel agencies (GIG, GUO, Agofure, etc....)
+2.) Travel payment endpoint
+3.) Buy for beneficiary endpoint
+
+Bills Payment: Shipping Payment (No Idea on how this works)
+
+Payment Method
+Payment Method: Contactless Payment
+Payment Method: Contactless Payment
+Payment Method: Contactless Payment
+Payment Method: Contactless Payment
+Payment Method: Contactless Payment
+
+
+
+ 
