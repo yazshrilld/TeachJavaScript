@@ -5,5 +5,5 @@ window.onload = () => {
     i += 1;
     console.log(i);
   });
-  console.log("Square: ", i*i)
+  console.log("Square: ", i*i*i)
 };
