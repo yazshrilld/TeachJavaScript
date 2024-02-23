@@ -705,9 +705,9 @@ const yazNum = [
   "ade",
 ];
 const abc = "amah";
-const view = yazNum.filter((a) => a === abc); //this outputs all the array items except amah, because as it loops through the array from the first element at index 0, itwhen it gets to the element that is
+const view = yazNum.filter((a) => a !== abc); //this outputs all the array items except amah, because as it loops through the array from the first element at index 0, itwhen it gets to the element that is
 //Note that The filter method originally is to display the truthy value, but we can display both true and false. The filter array method displays some array data weda the conditional is true or false, so but it depends on you, what you want to display, if you want to display the true, you write the conditional that gives true, but if you want to display the false, you write the conditional that displays the false.
-// console.log({ view });
+console.log({ view });
 const fred = "amah";
 const abcd = "amah";
 // console.log(fred === abcd)
@@ -724,9 +724,9 @@ const yazNums = [
   "ade",
 ];
 const abcs = "amad";
-const views = yazNums.filter((a) => a === abcs); //this outputs all the array items except amah, because as it loops through the array from the first element at index 0, itwhen it gets to the element that is
+const views = yazNums.filter((a) => a !== abcs); //this outputs all the array items except amah, because as it loops through the array from the first element at index 0, itwhen it gets to the element that is
 //Note that The filter method originally is to display the truthy value, but we can display both true and false. The filter array method displays some array data weda the conditional is true or false, so but it depends on you, what you want to display, if you want to display the true, you write the conditional that gives true, but if you want to display the false, you write the conditional that displays the false.
-// console.log({ view });
+console.log({ views });
 const freds = "amad";
 const abcds = "amad";
 // console.log(freds === abcds)
