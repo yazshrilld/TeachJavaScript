@@ -707,7 +707,7 @@ const yazNum = [
 const abc = "amah";
 const view = yazNum.filter((a) => a !== abc); //this outputs all the array items except amah, because as it loops through the array from the first element at index 0, itwhen it gets to the element that is
 //Note that The filter method originally is to display the truthy value, but we can display both true and false. The filter array method displays some array data weda the conditional is true or false, so but it depends on you, what you want to display, if you want to display the true, you write the conditional that gives true, but if you want to display the false, you write the conditional that displays the false.
-console.log({ view });
+// console.log({ view });
 const fred = "amah";
 const abcd = "amah";
 // console.log(fred === abcd)
@@ -726,7 +726,7 @@ const yazNums = [
 const abcs = "amad";
 const views = yazNums.filter((a) => a !== abcs); //this outputs all the array items except amah, because as it loops through the array from the first element at index 0, itwhen it gets to the element that is
 //Note that The filter method originally is to display the truthy value, but we can display both true and false. The filter array method displays some array data weda the conditional is true or false, so but it depends on you, what you want to display, if you want to display the true, you write the conditional that gives true, but if you want to display the false, you write the conditional that displays the false.
-console.log({ views });
+// console.log({ views });
 const freds = "amad";
 const abcds = "amad";
 // console.log(freds === abcds)
@@ -881,7 +881,57 @@ const transform = excelData.replace(/ /g, "_").toUpperCase();
 const pdf =
   "C:/Deployments/corperatesearch/src/main/resources/static/requests/yaz names inc/596421703491324.pdf";
 
-console.log(pdf.split("/")[pdf.split("/").length - 1]); //split is a marvelous array method
+// console.log(pdf.split("/")[pdf.split("/").length - 1]); //split is a marvelous array method
 
-const chNum = 5/3
-console.log({chNum})
+const chNum = 5 / 3;
+// console.log({chNum})
+
+// function whatDayIsToday(n) {
+//   // getDay() is a method of Date() - we will learn this later
+//   // var day = 3;
+//   var day = new Date().getDay();
+//   switch (day) {
+//     case 0:
+//       x = "Today it's Sunday";
+//       break;
+//     case 1:
+//       x = "Today it's Monday";
+//       break;
+//     case 2:
+//       x = "Today it's Tuesday";
+//       break;
+//     case 3:
+//       x = "Today it's Wednesday";
+//       break;
+//     case 4:
+//       x = "Today it's Thursday";
+//       break;
+//     case 5:
+//       x = "Today it's Friday";
+//       break;
+//     case 6:
+//       x = "Today it's Saturday";
+//       break;
+//   }
+//   console.log(x);
+//   // return x;
+// }
+
+// whatDayIsToday();
+
+function howManydays(month) {
+  let days = "";
+  switch (month) {
+    case 2:
+      days = 28;
+      break;
+    case 11:
+      days = 30;
+      break;
+    default:
+      days = 31;
+  }
+  console.log("Days: ", days);
+}
+
+howManydays(20)
