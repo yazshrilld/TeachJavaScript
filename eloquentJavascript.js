@@ -138,7 +138,7 @@
 //   }
 // }
 
-// CHAPTER -3: LEARNING FUNCTIONS
+/////////////////////////************ */   CHAPTER -3: LEARNING FUNCTIONS  */************////////////////////
 
 // const square = function (x) {
 //   return x * x;
@@ -170,14 +170,48 @@
 // console.log(n);
 // // → 10
 
-const power = (a, exp = 2) => {
-  let res = 1;
-  for (let num = 0; num < exp; num++) {
-    res = res * a;
-  }
-  console.log("Resultssss: ", res);
-  return res;
-};
+// const power = (a, exp = 2) => {
+//   let res = 1;
+//   for (let num = 0; num < exp; num++) {
+//     res = res * a;
+//   }
+//   console.log("Resultssss: ", res);
+//   return res;
+// };
 
-power(2);
-power(2, 6);
+// power(2);
+// power(2, 6);
+
+//example -1
+const hummus = function(factor) {
+  const ingredient = function(amount, unit, name) {
+    let ingredientAmount = amount * factor;
+    if(ingredientAmount > 1) {
+      unit += "s";
+    }
+    // console.log(`${ingredientAmount} ${unit} ${name}`)
+  };
+
+  ingredient(1, "can", "chickpeas");
+  ingredient(0.2, "cup", "tahini");
+  ingredient(1, "cup", "lemon jiuce");
+  ingredient(1, "clove", "garlic");
+  ingredient(2, "tablespoon", "olive oil");
+  ingredient(0.5, "teaspoon", "cumin");
+}
+// hummus(2)
+
+//example -2
+let launchMissiles = function() {
+  console.log("A tag")
+}
+if(true) {
+  launchMissiles = function() {
+    console.log("A name")
+  }
+}
+
+launchMissiles()
+
+
+

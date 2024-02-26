@@ -931,7 +931,7 @@ function howManydays(month) {
     default:
       days = 31;
   }
-  console.log("Days: ", days);
+  // console.log("Days: ", days);
 }
 
 howManydays(20)
