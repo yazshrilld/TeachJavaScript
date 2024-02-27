@@ -182,11 +182,11 @@
 // power(2);
 // power(2, 6);
 
-//example -1
-const hummus = function(factor) {
-  const ingredient = function(amount, unit, name) {
-    let ingredientAmount = amount * factor;
-    if(ingredientAmount > 1) {
+//example -1, we are testing the function parameter and scoping, local and global scope, and this is also closure
+const hummus = function (factor) {
+  const ingredient = function (amount, unit, name) {
+    let ingredientAmount = amount * factor; //this is also an example of closure, we can access factor from inside the ingredient function
+    if (ingredientAmount > 1) {
       unit += "s";
     }
     // console.log(`${ingredientAmount} ${unit} ${name}`)
@@ -198,20 +198,60 @@ const hummus = function(factor) {
   ingredient(1, "clove", "garlic");
   ingredient(2, "tablespoon", "olive oil");
   ingredient(0.5, "teaspoon", "cumin");
-}
+};
 // hummus(2)
 
-//example -2
-let launchMissiles = function() {
-  console.log("A tag")
+//example -2, we are testing the function bindings
+let launchMissiles = function () {
+  // console.log("A tag")
+};
+if (true) {
+  launchMissiles = function () {
+    console.log("A name");
+  };
 }
-if(true) {
-  launchMissiles = function() {
-    console.log("A name")
+// launchMissiles()
+
+//example -3, we are testing the parameter and arguements in JavaScript
+function deleted(a, b) {
+  if (b === undefined) {
+    // console.log(deleted(10))
+  } else {
+    return a - b;
   }
 }
+// console.log(deleted(10, 30))
 
-launchMissiles()
+//example -4, we are testing the parameter and arguements in JavaScript
+const power = (a, exp = 2) => {
+  let result = 1;
+  for (let ab = 0; ab < exp; ab++) {
+    result = result * a;
+  }
+  // console.log("Result: ", result)
+};
+// power(5)
+// power(9, 5)
 
+let x = 5
 
+const parentFunction = () => {
+  let myValue = 2
+
+  console.log(x)
+  console.log(myValue)
+
+  const childFunction = () => {
+    console.log(x += 5)
+    console.log(myValue += 5)
+  }
+
+ return childFunction
+}
+
+const result = parentFunction()
+result()
+result()
+result()
+console.log(x)
 
