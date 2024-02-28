@@ -253,5 +253,5 @@ const result = parentFunction()
 result()
 result()
 result()
-console.log(x)
+console.log(x + 6)
 
