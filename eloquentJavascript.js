@@ -238,12 +238,12 @@ let x = 5
 const parentFunction = () => {
   let myValue = 2
 
-  console.log(x)
-  console.log(myValue)
+  // console.log(x)
+  // console.log(myValue)
 
   const childFunction = () => {
-    console.log(x += 5)
-    console.log(myValue += 5)
+    // console.log(x += 5)
+    // console.log(myValue += 5)
   }
 
  return childFunction
@@ -253,5 +253,5 @@ const result = parentFunction()
 result()
 result()
 result()
-console.log(x)
+// console.log(x)
 
