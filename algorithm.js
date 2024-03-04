@@ -105,3 +105,8 @@ let newArrayss = ["shape","figure-8","age",26,"love",true,"Godly","true",100]
 
 // myObj(newObjects);
 myObjce(newArrayss);
+
+let  mysnum=25;
+var a=mysnum.toString(2)
+var b=mysnum
+console.log([a, b])
