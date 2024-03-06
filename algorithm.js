@@ -109,4 +109,4 @@ myObjce(newArrayss);
 let  mysnum=25;
 var a=mysnum.toString(2)
 var b=mysnum
-console.log([a, b])
+console.log("Array: ", [a, b])
