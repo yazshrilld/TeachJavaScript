@@ -934,4 +934,63 @@ function howManydays(month) {
   // console.log("Days: ", days);
 }
 
-howManydays(20)
+howManydays(20);
+
+const Merchant = {
+  accNumber: 873827,
+  inputerName: "hsgdvg",
+  inputerEmail: "vhgsdvgh@jgd.xkhs",
+  reviewerName: "jhsdh",
+  reviewerEmail: "jsbdjh@jhbsd.cjhs",
+  authorizerName: "jhsdghj",
+  authorizerEmail: "jsdgj@jhbsd.jhbs",
+};
+
+const myMerchants = Object.entries(Merchant || {}).map(([name, value]) => {
+  // console.log({ name, value });
+  // return {name, value}
+});
+
+const firstMerch = Object.values(Merchant).length;
+// console.log("Length: ", firstMerch);
+
+function sumToNumbers(abc) {
+  let sum = 0;
+
+  for (let i = 1; i <= abc; i++) {
+    sum += i;
+  }
+  return sum;
+}
+
+// console.log("Sum: ", sumToNumbers(15));
+
+const thousand = 1000
+const YExp= 1710771268000
+const Iat =  1710748309 * thousand
+const Dat = 1710753268849
+const divi = 60*60
+
+// exp
+// : 
+// 1710766553
+// iat
+// : 
+// 1710748553
+
+
+// console.log({YExp, Iat, thousand, Dat})
+// console.log((Dat - Iat)/divi)
+
+const currentTimeInMillis = Date.now();
+
+// Convert milliseconds to minutes
+const currentTimeInMinutes = Math.floor(currentTimeInMillis / (1000 * 60));
+const YYExp = Math.floor(YExp / (1000 * 60));
+const DDat = Math.floor(Dat / (1000 * 60));
+const IIat = Math.floor(Iat / (1000 * 60));
+const checkExp = YYExp - currentTimeInMinutes
+const checkIat = IIat - currentTimeInMinutes
+
+console.log({currentTimeInMillis, currentTimeInMinutes, YYExp, DDat, IIat, YExp, Dat, Iat, checkExp, checkIat});
+
